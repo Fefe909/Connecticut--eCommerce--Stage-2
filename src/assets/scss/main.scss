@@ -1,0 +1,18 @@
+@import './abstracts/variables';
+@import './vendors/fonts';
+/*aca van los imports de las paginas*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $color-light-gray;
+    background-image:  radial-gradient($color-secundary 1.25px, transparent 1.25px), radial-gradient($color-secundary 1.25px, $color-light-gray 1.25px);
+    background-size: 50px 50px;
+    background-position: 0 0,25px 25px;
+    font-family: 'Roboto', sans-serif;
+}
+/*  El fondo no va acá, solo debe haber imports.
+    El problema es que estoy usando variables scss.
+*/

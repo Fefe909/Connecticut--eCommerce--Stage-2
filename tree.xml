@@ -1,0 +1,15 @@
+<!--pensar en retornos*/}-->
+
+<App>
+    <MainLayout>
+        <Header />
+        <Main>
+            <CardList>
+                <Card />
+            </CardList>
+        <Main />
+        <Footer />
+        
+    </MainLayout>
+
+</App>

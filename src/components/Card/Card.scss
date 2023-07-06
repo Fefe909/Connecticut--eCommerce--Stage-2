@@ -1,0 +1,97 @@
+@import '../../assets/scss/main.scss';
+.card {
+    background-color: $color-lightest-gray;
+    border-top: 4px solid $color-secundary;
+    border-bottom: 4px solid $color-secundary;
+    border-radius: 10px;
+    box-shadow: 0 0 12px $color-secundary  ;
+    width: 350px;
+    height: 500px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    &:hover {
+        box-shadow: 1px 3px 45px $color-secundary;
+        background-color: $color-white;
+        transform: scale(1.01);
+        transition: all 0.2s;
+    }
+    .card__image-container {
+        width: 75%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 2.5%;
+        img{
+            width: 100%;
+            position: relative;
+            border-radius: 7px;
+            display: block;
+        }
+    }
+    .card__content {
+        width: 75%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 29%;
+        .card__content--heading{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: $color-secundary;
+            margin-top: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .card__content--description {
+            .card__content--description-text {
+                width: 100%;
+                font-size: 1rem;
+                display:flex;
+                flex-direction: row;
+                color: $color-black;
+                margin-top: 5%; 
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+    .card__price {
+        width: 75%;
+        color:$color-secundary;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 12%;
+    } 
+    .card__button {
+        background-color: $color-primary;
+        border-radius: 10px;
+        color: $color-secundary;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 10px;
+        position: absolute;
+        bottom: 2%;
+        &:hover {
+            background-color: $color-secundary;
+            color: $color-primary;
+        }
+    }
+}
