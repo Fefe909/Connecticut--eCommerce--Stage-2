@@ -4,7 +4,7 @@ import '../assets/scss/main.scss';
 
 const AltaContent = () => {
     <div>
-        <h1>Hola</h1>
+        <h1>Hola Alta</h1>
     </div>
 };
 
