@@ -1,31 +1,29 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = ({ children }) => {
+const Card = ({ image, title, description, price }) => {
     return (
-        /*
         <li className="card">
             <div className="card__image-container">
-                <img src="${product.imagen}" alt="${product.titulo}" />
+                <img src={image} alt={title} />
             </div>
             <div className="card__content">
-                <h2 className="card__content--heading">${product.titulo}</h2>
+                <h2 className="card__content--heading">
+                    {title}
+                </h2>
                 <div className="card__content--description">
                     <p className="card__content--description-text">
-                        ${product.descripcion}
+                        {description}
                     </p>
                 </div>
             </div>
             <div className="card__price">
                 <p>
-                    AR$ ${product.precio}
+                    AR$ ${price}
                 </p>
             </div>
             <a className="card__button" href="#">Comprar!</a>
-        </li>   */
-        <div>
-            Hola
-        </div>     
+        </li>   
     );
 };
 export default Card;

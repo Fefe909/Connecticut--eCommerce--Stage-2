@@ -1,20 +1,17 @@
 import React from "react";
 import './Main.scss';
-import CardList from "../../components/CardList/CardList";
 
-const Main = ({ children }) => {
+
+const Main = ({ children, pageTitle, pageDescription }) => {
+    
     return (
         <main>
-            <section>{/*Section*/}
+            <section>
                 <div className="section__div">
-                    <h1>Bienvenido a nuestro site</h1>
-                    <p>Estos son nuestros productos</p>
+                    <h1 >{pageTitle}</h1>
+                    <p>{pageDescription}</p>
                 </div>
-                {/*CardList*/}
-                <ul className="cards-container" id="cards-container">
-                    {/*<Card />*/}
-                    <CardList />
-                </ul>
+                {children}
             </section>
         </main>
     );

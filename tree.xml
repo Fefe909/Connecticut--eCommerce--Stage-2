@@ -1,15 +1,21 @@
 <!--pensar en retornos*/}-->
 
 <App>
-    <MainLayout>
-        <Header />
-        <Main>
-            <CardList>
-                <Card />
-            </CardList>
-        <Main />
-        <Footer />
-        
-    </MainLayout>
+    <Router>
+        <MainLayout>
+            
+            <Header>
+            </Header>
+            <Main>
+                <MainLayout>
+                    <Main pageTitle={pageTitle} pageDescription={pageDescription}>
+                        <CardList />
+                    </Main>
+                </MainLayout>
+            <Main />
+            <Footer />
+            
+        </MainLayout>
+    </Router>
 
 </App>

@@ -6,17 +6,17 @@ const NavBarBottom = () => {
         <div className="nav__bar--bottom">
             <div className="catalogue">
                 <button className="catalogue__button">Catálogo
-                <i className="fa fa-caret-down"> </i>
+                    <i className="fa fa-caret-down"> </i>
                 </button>
                 <div className="catalogue__menu">
-                <a href="#">Smartphones</a>
-                <a href="#">Audio y Video</a>
-                <a href="#">Drones</a>
-                <a href="#">Fotografía</a>
-                <a href="#">Streaming</a>
-                <a href="#">Lavarropas</a>
-                <a href="#">Google</a>
-                <a href="#">Apple</a>
+                    <a href="#">Smartphones</a>
+                    <a href="#">Audio y Video</a>
+                    <a href="#">Drones</a>
+                    <a href="#">Fotografía</a>
+                    <a href="#">Streaming</a>
+                    <a href="#">Lavarropas</a>
+                    <a href="#">Google</a>
+                    <a href="#">Apple</a>
                 </div>
             </div> 
             <div className="search-bar">

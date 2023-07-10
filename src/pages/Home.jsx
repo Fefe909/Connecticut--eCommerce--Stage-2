@@ -8,18 +8,18 @@ const HomeContent () => {
 
 };
 
-<MainLayout {children=<Card busqueda={busqueda}/>} />
 */
 export default function Home() {
     //const [search, setSearch] = useState('');
-    
+    const homeTitle = "Bienvenido a nuestro site";
+    const homeDescription = "Estos son nuestros productos";
+
     return (
         <>
-            <MainLayout>
-                <Main>
-                    <CardList />
-                </Main>
+            <MainLayout pageTitle={homeTitle} pageDescription={homeDescription}>
+                <CardList />
             </MainLayout>
         </>
     );
 };
+/*CHEQUEAR ENCTYPE (TYPE) Y ETIQUETA DE CIERRE DE TEXTAREA*/

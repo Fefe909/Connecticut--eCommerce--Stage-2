@@ -21,13 +21,6 @@ main {
                 margin-top: 5px;
             }
         }
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0 auto;
-
-        }
         .product-form, .contact-form {
             color: $color-tertiary;
             background-color: $color-white;

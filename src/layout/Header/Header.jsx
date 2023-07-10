@@ -6,8 +6,8 @@ import NavBarBottom from '../NavBarBottom/NavBarBottom';
 const Header = ({ children }) => {
     return (
         <header className='main__header'>
-            <NavBar children={ children }/>
-            <NavBarBottom children={ children }/>
+            <NavBar />
+            <NavBarBottom />
         </header>
     );
 }

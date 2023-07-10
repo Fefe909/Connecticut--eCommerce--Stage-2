@@ -5,21 +5,16 @@ import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 
 
-const MainLayout = ({ children, titulo }) => {
+const MainLayout = ({ children, pageTitle, pageDescription }) => {
     return (
         <>
-            <Header>
-                {/*titulo ejemplo*/}
-            </Header>
-            <Main>
+            <Header />
+            <Main pageTitle={pageTitle} pageDescription={pageDescription}>
                 {children}
             </Main>
             <Footer/>
-            
         </>
     );
 };
-
-
 
 export default MainLayout;
