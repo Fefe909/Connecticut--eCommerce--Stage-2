@@ -1,5 +1,4 @@
 import MainLayout from "../layout/MainLayout";
-import Main from "../layout/Main/Main";
 
 const ContactoContent = () => {
     return (
