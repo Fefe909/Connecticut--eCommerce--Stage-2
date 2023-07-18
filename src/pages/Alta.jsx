@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState} from "react";
 import MainLayout from "../layout/MainLayout";
+import { validateProductListing, validateEmail, validateTitle, validatePrice, validateDescription } from "../services/formValidation";
 import '../assets/scss/main.scss';
 
 const AltaContent = () => {
@@ -7,7 +8,7 @@ const AltaContent = () => {
     return (
         <div className="product-form">
             <h1 className="form__logo">Connecticut</h1>
-            <form className="productForm" id="productForm" encType="multipart/form-data" >
+            <form className="productForm" id="productForm" encType="multipart/form-data" onSubmit={validateProductListing}>
                 <label className="labelForm" htmlFor="emailEmployee">Email del empleado:<span className="required">*obligatorio</span></label>
                 <input className="inputData" type="email" id="emailEmployee" name="emailEmployee" required />
                 <label className="labelForm" htmlFor="productTitle">Título del producto:<span className="required">*obligatorio</span></label>

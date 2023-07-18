@@ -1,9 +1,6 @@
 import React from "react";
 import '../assets/scss/pages/Nosotros.scss';
 import MainLayout from "../layout/MainLayout";
-import CeoImage from '../assets/images/nosotros/Yo.JPG';
-import CoCeoImage from '../assets/images/nosotros/Seba.PNG';
-import Wozniak from '../assets/images/nosotros/SteveWozniak.jpg';
 
 const NosotrosContent = () => {
     return (
@@ -11,7 +8,7 @@ const NosotrosContent = () => {
             <ul className="cards-container">
                 <li className="card">
                     <div className="card__image-container">
-                        <img src={CeoImage} alt="Federico A Sáenz - CEO" />
+                        <img src="./images/nosotros/Yo.JPG" alt="Federico A Sáenz - CEO" />
                     </div>
                     <div className="card__content">
                         <h2 className="card__content--heading">Federico A. Sáenz</h2>
@@ -30,7 +27,7 @@ const NosotrosContent = () => {
                 </li>
                 <li className="card">
                     <div className="card__image-container">
-                        <img src={CoCeoImage} alt="Sebastian Ledesma - co-CEO" />
+                        <img src="./images/nosotros/Seba.PNG" alt="Sebastian Ledesma - co-CEO" />
                     </div>
                     <div className="card__content">
                         <h2 className="card__content--heading">Sebastián Ledesma</h2>
@@ -49,7 +46,7 @@ const NosotrosContent = () => {
                 </li>
                 <li className="card">
                     <div className="card__image-container">
-                        <img src={Wozniak} alt="Steve Wozniak - Apple" />
+                        <img src="./images/nosotros/SteveWozniak.jpg" alt="Steve Wozniak - Apple" />
                     </div>
                     <div className="card__content">
                         <h2 className="card__content--heading">Steve Wozniak</h2>
