@@ -1,17 +1,3 @@
-export function validateProductListing(event) {
-    event.preventDefault();
-    const email = document.getElementById("emailEmployee").value;
-    const title = document.getElementById("productTitle").value;
-    const currentPrice = document.getElementById("currentPrice").value;
-    const formerPrice = document.getElementById("formerPrice").value;
-    const description = document.getElementById("description").value;
-    if (!validateEmail(email)) return false;
-    if (!validateTitle(title)) return false;
-    if (!validatePrice(currentPrice)) return false;
-    if (!validatePrice(formerPrice)) return false;
-    if (!validateDescription(description)) return false;
-    alert("Los datos se enviaron correctamente :) .");
-}
 export function validateEmail(email) {
     const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!emailRegex.test(email)) {
@@ -21,8 +7,8 @@ export function validateEmail(email) {
     return true;
 }
 export function validateTitle(title) {
-    if (title.length > 25) {
-        alert("Por favor, ingrese un título de hasta 25 caracteres.");
+    if ((title.length < 5) || (title.length > 25)) {
+        alert("Por favor, ingrese un título de entre 5 y 25 caracteres.");
         return false;
     }
     return true;
@@ -40,22 +26,6 @@ export function validateDescription(description) {
         return false;
     }
     return true;
-}
-
-// VALIDACIONES CONTACT.HTML
-export function validateContact(event) {
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const age = document.getElementById("age").value;
-    const email = document.getElementById("email").value;
-    const about = document.getElementById("about").value;
-    const message = document.getElementById("message").value;
-    if (!validateName(name)) return false;
-    if (!validateAge(age)) return false;
-    if (!validateEmail(email)) return false;
-    if (!validateAbout(about)) return false;
-    if (!validateMessage(message)) return false;
-    alert("Los datos se enviaron correctamente :) .");
 }
 export function validateName(name) {
     if (name.length > 50) {

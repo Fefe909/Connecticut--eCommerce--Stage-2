@@ -3,82 +3,29 @@ main {
         .product-form, .contact-form {
             color: $color-tertiary;
             background-color: $color-white;
-            width: 450px;
-            height: 635px;
             border-radius: 10px;
-            margin: auto;
             display: flex;
-            justify-content: center;
-            position: relative;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            max-width: 450px;
             .form__logo {
-                position: absolute;
-                top: 2%;
+                margin: 25px;
                 font-family: 'Lobster', cursive;
                 color: $color-secundary;
                 user-select: none;
                 font-size: 4rem;
                 &:hover {
-                color: $color-primary;
-                }
-            }
-            &__send {
-                background-color: $color-secundary;
-                color: $color-white;
-                border-radius: 10px;
-                text-transform: uppercase;
-                font-size: 1rem;
-                font-weight: bold;
-                width: 150px;
-                height: 30px;
-                border: none;
-                cursor: pointer;
-                position: absolute;
-                bottom: 5%;
-                left: 50%;
-                transform: translateX(-50%);
-                outline-color: $color-primary;
-                box-shadow: 1px 1px 2px $color-primary;
-                &:hover {
-                    background-color: $color-primary;
-                    color: $color-secundary;
-                    outline-color: $color-fourth;
-                    box-shadow: 1px 1px 2px $color-fourth;
+                    color: $color-primary;
                 }
             }
             .productForm {
+                align-items: start;
                 width: 80%;
-                margin: 100px 4px;
+                height: 65%;
                 display: flex;
                 flex-direction: column;
                 font-size: 1.2em;
-                .labelForm {
-                    margin-top: 4%;
-                    margin-bottom: 1.3%;
-                }
-                .inputData,
-                .textareaData {
-                    outline-color: $color-primary;
-                    border: 1px solid $color-fourth;
-                    box-shadow: 1px 1px 2px $color-primary;
-                    padding: 5px;
-                    border-radius: 3px;
-                }
-                .textareaData {
-                    resize: none;
-                    height: 120px;
-                }
-                #uploadImg {
-                    height: 110px;
-                }
-                #textareaMessage {
-                    height: 120px;
-                }   
-                .required {
-                    color: $color-red;
-                    font-size: 0.7em;
-                    margin-left: 5px;
-                    max-width: 100px;
-                }
             }
         }
     }

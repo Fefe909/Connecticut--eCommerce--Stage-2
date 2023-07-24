@@ -17,4 +17,4 @@ const routes = [
   },
 ];
 
-//const router = createBrowserRouter({ routes });
+const router = createBrowserRouter({ routes });

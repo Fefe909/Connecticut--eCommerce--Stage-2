@@ -6,7 +6,7 @@ const NavBarBottom = () => {
         <div className="nav__bar--bottom">
             <div className="catalogue">
                 <button className="catalogue__button">Catálogo
-                    <i className="fa fa-caret-down"> </i>
+                    <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="catalogue__menu">
                     <a href="#">Smartphones</a>
@@ -22,12 +22,12 @@ const NavBarBottom = () => {
             <div className="search-bar">
                 <input type="text" placeholder="Buscar.." />
                 <button className="search-bar__button">
-                <i className="fa-solid fa-magnifying-glass"></i>
+                    <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
             <div className="cart">
                 <button className="cart__button">
-                <i className="fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-cart-shopping"></i>Carrito
                 </button>
             </div>
         </div>

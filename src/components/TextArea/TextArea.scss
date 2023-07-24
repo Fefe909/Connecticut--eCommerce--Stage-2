@@ -1,0 +1,21 @@
+@import '../../assets/scss/main.scss';
+
+.labelForm {
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+.textareaData {
+    outline-color: $color-primary;
+    border: 1px solid $color-fourth;
+    box-shadow: 1px 1px 2px $color-primary;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+.required {
+    color: $color-red;
+    font-size: 0.7em;
+    margin-left: 5px;
+    max-width: 100px;
+}
+/*ver cuando se superponen clases en el html*/

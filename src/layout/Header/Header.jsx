@@ -3,7 +3,7 @@ import './Header.scss'
 import NavBar from '../NavBar/NavBar';
 import NavBarBottom from '../NavBarBottom/NavBarBottom';
 
-const Header = ({ children }) => {
+const Header = () => {
     return (
         <header className='main__header'>
             <NavBar />

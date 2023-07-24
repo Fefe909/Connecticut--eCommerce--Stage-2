@@ -19,12 +19,11 @@ const Card = ({ image, title, description, price }) => {
             </div>
             <div className="card__price">
                 <p>
-                    AR$ ${price}
+                    AR$ {price}
                 </p>
             </div>
             <a className="card__button" href="#" onClick={(e) => {
                 e.preventDefault();
-                alert("hola");
             }}>Comprar!</a>
         </li>   
     );

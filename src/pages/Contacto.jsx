@@ -1,22 +1,44 @@
+import { useState } from "react";
+import FormButton from "../components/FormButton/FormButton";
+import TextArea from "../components/TextArea/TextArea";
+import TextBox from "../components/TextBox/TextBox";
 import MainLayout from "../layout/MainLayout";
-import { validateContact } from "../services/formValidation";
+import { validateName, validateAge, validateEmail, validateAbout, validateMessage } from "../services/formValidation";
 
 const ContactoContent = () => {
+    const [data, setData] = useState({});
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData({ ...data, ...{ [name]: value} });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        ((
+            !validateName(data.name) ||
+            !validateAge(data.age) ||
+            !validateEmail(data.email) ||
+            !validateAbout(data.about) ||
+            !validateMessage(data.message)
+          )
+        ) ? 
+        (
+            alert("Por favor, verifique los campos del formulario.")
+        ) : (
+            alert("Los datos se enviaron correctamente :).")
+        );
+    };
     return (
         <div className="contact-form">
             <h1 className="form__logo">Connecticut</h1>
-            <form className="productForm" id="contactForm" onSubmit={validateContact}>
-                <label className="labelForm" htmlFor="name">Nombre:<span className="required">*obligatorio</span></label>
-                <input className="inputData" type="text" id="name" name="nombre" required />
-                <label className="labelForm" htmlFor="age">Edad:<span className="required">*obligatorio</span></label>
-                <input className="inputData" type="number" id="age" name="edad" required />
-                <label className="labelForm" htmlFor="email">Email:<span className="required">*obligatorio</span></label>
-                <input className="inputData" type="email" id="email" name="email" required />
-                <label className="labelForm" htmlFor="about">Asunto:<span className="required">*obligatorio</span></label>
-                <input className="inputData" type="text" id="about" name="asunto" required />
-                <label className="labelForm" htmlFor="message">Mensaje:<span className="required">*obligatorio</span></label>
-                <textarea className="textareaData" id="message" name="message" required />
-                <input type="submit" className="contact-form__send" value="Enviar" />
+            <form className="productForm" id="contactForm" onSubmit={handleSubmit}>
+                <TextBox label='Nombre:' name='name' type='text' required={true} onChange={handleChange} />
+                <TextBox label='Edad:' name='age' type='text' required={true} onChange={handleChange} />
+                <TextBox label='Email:' name='email' type='email' required={true} onChange={handleChange} />
+                <TextBox label='Asunto:' name='about' type='text' required={true} onChange={handleChange} />
+                <TextArea label='Mensaje:' name='message' rows={3} value={data.message} required={true} onChange={handleChange} />
+                <FormButton data={data} />
             </form>
         </div>  
     );

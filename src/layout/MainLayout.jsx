@@ -4,7 +4,6 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 
-
 const MainLayout = ({ children, pageTitle, pageDescription }) => {
     return (
         <>
@@ -16,5 +15,4 @@ const MainLayout = ({ children, pageTitle, pageDescription }) => {
         </>
     );
 };
-
 export default MainLayout;

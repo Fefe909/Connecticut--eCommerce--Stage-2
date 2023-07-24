@@ -1,68 +1,29 @@
 import React from "react";
-import '../assets/scss/pages/Nosotros.scss';
 import MainLayout from "../layout/MainLayout";
+import Card from "../components/Card/Card";
 
 const NosotrosContent = () => {
     return (
         <section>
             <ul className="cards-container">
-                <li className="card">
-                    <div className="card__image-container">
-                        <img src="./images/nosotros/Yo.JPG" alt="Federico A Sáenz - CEO" />
-                    </div>
-                    <div className="card__content">
-                        <h2 className="card__content--heading">Federico A. Sáenz</h2>
-                        <div className="card__content--description">
-                            <p className="card__content--description-text">
-                                Nuestro creador y CEO.<br/>
-                                La mente maestra.<br/>
-                                EL KINGA.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="card__price">
-                        <p className="card__price--final">AR$ GRATIS</p>
-                    </div>
-                    <a className="card__button" href="#">Enviar mensaje</a>
-                </li>
-                <li className="card">
-                    <div className="card__image-container">
-                        <img src="./images/nosotros/Seba.PNG" alt="Sebastian Ledesma - co-CEO" />
-                    </div>
-                    <div className="card__content">
-                        <h2 className="card__content--heading">Sebastián Ledesma</h2>
-                        <div className="card__content--description">
-                        <p className="card__content--description-text">
-                            Nuestro co-creador y co-CEO.<br/>
-                            Experiencia, filosofía y sabiduría.<br/>
-                            EL CO-KINGA.
-                        </p>
-                        </div>
-                    </div>
-                    <div className="card__price">
-                        <p className="card__price--final">AR$ GRATIS</p>
-                    </div>
-                    <a className="card__button" href="#">Enviar mensaje</a>
-                </li>
-                <li className="card">
-                    <div className="card__image-container">
-                        <img src="./images/nosotros/SteveWozniak.jpg" alt="Steve Wozniak - Apple" />
-                    </div>
-                    <div className="card__content">
-                        <h2 className="card__content--heading">Steve Wozniak</h2>
-                        <div className="card__content--description">
-                        <p className="card__content--description-text">
-                            ¿¿Qué hace acá??<br/>
-                            Nosotros tampoco sabemos.<br/>
-                            En fin, EL WOZ.
-                        </p>
-                        </div>
-                    </div>
-                    <div className="card__price">
-                        <p className="card__price--final">AR$ GRATIS</p>
-                    </div>
-                    <a className="card__button" href="#">Enviar mensaje</a>
-                </li>
+                <Card 
+                image='./images/nosotros/Yo.JPG'
+                title='Federico A. Sáenz'
+                description='Nuestro creador y CEO. La mente maestra. EL KINGA.'
+                price='GRATIS'
+                />
+                <Card 
+                image='./images/nosotros/Seba.PNG'
+                title='Sebastián Ledesma'
+                description='Nuestro co-creador y co-CEO. Experiencia, filosofía y sabiduría. EL CO-KINGA.'
+                price='GRATIS'
+                />
+                <Card 
+                image='./images/nosotros/SteveWozniak.jpg'
+                title='Steve G. Wozniak'
+                description='¿¿Qué hace acá?? Nosotros tampoco sabemos. En fin, EL WOZ.'
+                price='GRATIS'
+                />
             </ul>
         </section>
     );

@@ -1,0 +1,30 @@
+@import '../../assets/scss/main.scss';
+body {
+    main {
+        section {
+            .product-form,.contact-form {
+                .form__send {
+                    background-color: $color-secundary;
+                    color: $color-white;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    width: 150px;
+                    height: 30px;
+                    border: none;
+                    cursor: pointer;
+                    margin: 10% auto;
+                    outline-color: $color-primary;
+                    box-shadow: 1px 1px 2px $color-primary;
+                    &:hover {
+                        background-color: $color-primary;
+                        color: $color-secundary;
+                        outline-color: $color-fourth;
+                        box-shadow: 1px 1px 2px $color-fourth;
+                    }
+                }
+            }
+        }
+    }
+}
