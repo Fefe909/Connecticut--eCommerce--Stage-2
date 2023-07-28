@@ -38,7 +38,7 @@
         justify-content: center;
         &--heading{
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             text-decoration: none;
             color: $color-secundary;
@@ -47,7 +47,7 @@
         &--description {
             &-text {
                 width: 100%;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 color: $color-black;
                 padding: 5px 2rem;
                 height: 60px;
@@ -58,7 +58,7 @@
     }
     .card__price {
         color:$color-secundary;
-        font-size: 20px;
+        font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
         margin-top: auto;

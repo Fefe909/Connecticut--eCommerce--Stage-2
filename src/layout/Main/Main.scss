@@ -10,15 +10,16 @@ main {
         align-items: center;
         text-align: center;
         .section__div { 
+            color: $color-secundary;
             width: 80%;
             height: 100px;
-            color: $color-secundary;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             h1 {
-                letter-spacing: 6px;
+                font-size: 1.4rem;
+                letter-spacing: 5px;
             }
             p {
                 margin-top: 5px;

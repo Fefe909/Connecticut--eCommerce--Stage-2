@@ -5,7 +5,6 @@ import Alta from '../pages/Alta';
 import Contacto from '../pages/Contacto';
 import Nosotros from '../pages/Nosotros';
 
-
 export default function App() {
   return (
     <Router>

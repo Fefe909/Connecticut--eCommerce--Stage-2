@@ -7,20 +7,20 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 45%;
+            width: 40%;
             max-width: 450px;
             .form__logo {
-                margin: 25px;
-                font-family: 'Lobster', cursive;
                 color: $color-secundary;
+                font-family: 'Lobster', cursive;
+                font-size: 3.8rem;
+                margin: 25px;
                 user-select: none;
-                font-size: 4rem;
                 &:hover {
                     color: $color-primary;
                 }
             }
             .productForm {
-                align-items: start;
+                align-items: flex-start;
                 width: 80%;
                 height: 65%;
                 display: flex;

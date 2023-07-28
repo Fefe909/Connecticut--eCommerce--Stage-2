@@ -2,7 +2,7 @@ import { useState } from "react";
 import FormButton from "../components/FormButton/FormButton";
 import TextArea from "../components/TextArea/TextArea";
 import TextBox from "../components/TextBox/TextBox";
-import MainLayout from "../layout/MainLayout";
+import {MainLayout} from "../layout/MainLayout";
 import { validateName, validateAge, validateEmail, validateAbout, validateMessage } from "../services/formValidation";
 
 const ContactoContent = () => {

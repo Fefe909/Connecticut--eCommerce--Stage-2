@@ -1,21 +1,20 @@
-<!--pensar en retornos*/}-->
-
 <App>
     <Router>
         <MainLayout>
-            
-            <Header>
-            </Header>
-            <Main>
-                <MainLayout>
-                    <Main pageTitle={pageTitle} pageDescription={pageDescription}>
-                        <CardList />
+            <SearchContext.Provider>
+                <Header>
+                    <NavBar>
+                    <NavBarBottom>
+                        <SearchBar />
+                    </NavBarBottom>                    
+                <Header />
+                    <Main>
+                        <CardList> //CONSUMER
+                            <Card /> || <Preloader/>
+                        </CardList> 
                     </Main>
-                </MainLayout>
-            <Main />
-            <Footer />
-            
+                <Footer />
+            <SearchContext.Provider />
         </MainLayout>
     </Router>
-
 </App>

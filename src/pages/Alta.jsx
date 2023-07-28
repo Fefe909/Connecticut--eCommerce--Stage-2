@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import MainLayout from "../layout/MainLayout";
-import { validateProductListing, validateEmail, validateTitle, validatePrice, validateDescription } from "../services/formValidation";
+import {MainLayout} from "../layout/MainLayout";
+import { validateEmail, validateTitle, validatePrice, validateDescription } from "../services/formValidation";
 import '../assets/scss/main.scss';
 import TextBox from "../components/TextBox/TextBox";
 import TextArea from "../components/TextArea/TextArea";
 import FormButton from '../components/FormButton/FormButton';
-
 
 const AltaContent = () => {
     const [data, setData] = useState({});
@@ -13,7 +12,6 @@ const AltaContent = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setData({ ...data, ...{ [name]: value} });
-        console.log(data);
     };
 
     const handleSubmit = (e) => {

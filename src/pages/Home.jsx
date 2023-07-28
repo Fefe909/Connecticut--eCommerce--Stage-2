@@ -1,19 +1,10 @@
-//import { useState } from "react";
-import MainLayout from "../layout/MainLayout";
-import Main from "../layout/Main/Main";
+import {MainLayout} from "../layout/MainLayout";
 import CardList from "../components/CardList/CardList";
 
-/*
-const HomeContent () => {
-
-};
-
-*/
-export default function Home() {
-    //const [search, setSearch] = useState('');
+const Home = () => {
     const homeTitle = "Bienvenido a nuestro site";
     const homeDescription = "Estos son nuestros productos";
-
+    
     return (
         <>
             <MainLayout pageTitle={homeTitle} pageDescription={homeDescription}>
@@ -22,4 +13,4 @@ export default function Home() {
         </>
     );
 };
-/*CHEQUEAR ENCTYPE (TYPE) Y ETIQUETA DE CIERRE DE TEXTAREA*/
+export default Home; 

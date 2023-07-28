@@ -1,6 +1,7 @@
 @import "../../assets/scss/main.scss";
 .nav__bar--bottom{
     background-color: $color-secundary;
+    font-size: $defaultFontSize;
     opacity: calc(77%);
     height: 70px;
     width: 100%;
@@ -9,18 +10,17 @@
     justify-content: space-between;
     position: relative;
     .catalogue {
-        float: left;
         overflow: hidden;
         margin-left: 10px; 
         .catalogue__button {
             background-color: $color-primary;
             color: $color-secundary;
             font-weight: bold;
-            border: 0;
+            border: 0.13rem solid $color-lightest-gray;
             outline: none;
             padding: 10px;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: $defaultFontSize;
             cursor: pointer;   
             &:hover{
                 background-color: $color-secundary;
@@ -37,11 +37,9 @@
         .catalogue__menu {
             display: none;
             position: absolute;
-            //z-index: 10;
             background-color: $color-lightest-gray;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            
             &:hover {
                 display: block;
                 z-index: 10;
@@ -65,47 +63,6 @@
         background-color: $color-secundary;
         color: $color-primary;
     }
-    .search-bar {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        input {
-            font-size: 1rem;
-            width: 300px;
-            padding: 10px;
-            padding-right: 35px;
-            border-radius: 5px 10px 10px 5px;
-            border: 0;
-            outline: none;
-            &:focus {
-                border: 1px solid $color-primary;
-                width: 400px;
-                transition: all 0.2s;
-            }
-        }
-        .search-bar__button {
-            background-color: $color-primary;
-            font-size: 1rem;
-            padding: 10px;
-            position: absolute;
-            border: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 0 5px 5px 0;
-            color: $color-secundary;
-            cursor: pointer;
-            &:hover {
-                background-color: $color-secundary;
-                color: $color-primary;
-            }
-        }
-    }
     .cart {
         display: flex;
         justify-content: center;
@@ -114,10 +71,10 @@
             font-weight: bold;
             background-color: $color-primary;
             color: $color-secundary;
-            border: 0;
+            border: 0.13rem solid $color-lightest-gray;
             padding: 10px;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: $defaultFontSize;
             cursor: pointer;
             margin-right: 10px;
             &:hover {

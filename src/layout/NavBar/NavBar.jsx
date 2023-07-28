@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './NavBar.scss'
 
 const NavBar = () => {
@@ -10,29 +10,46 @@ const NavBar = () => {
             </span>
             <ul className="nav-bar__nav-list">
                 <li className="nav-bar__nav-item">
-                    <Link to="/" className="nav-bar__nav-link">Inicio</Link>
+                    <NavLink to="/" className="nav-bar__nav-link">Inicio</NavLink>
                 </li>
                 <li className="nav-bar__nav-item">
-                    <Link to="/Alta" className="nav-bar__nav-link">Alta</Link>
+                    <NavLink to="/Alta" className="nav-bar__nav-link">Alta</NavLink>
                 </li>
                 <li className="nav-bar__nav-item">
-                    <Link to="/Contacto" className="nav-bar__nav-link">Contacto</Link>
+                    <NavLink to="/Contacto" className="nav-bar__nav-link">Contacto</NavLink>
                 </li>
                 <li className="nav-bar__nav-item">
-                    <Link to="/Nosotros" className="nav-bar__nav-link">Nosotros</Link>
+                    <NavLink to="/Nosotros" className="nav-bar__nav-link">Nosotros</NavLink>
                 </li>
             </ul>
             <ul className="nav-bar__nav-list--account">
                 <li className="nav-bar__nav-item--account">
-                    <Link to="/" className="nav-bar__nav-link">Registrarse</Link>
+                    <Link to="/" className="nav-bar__nav-link">
+                        <i className="fa-brands fa-youtube nav-bar__icons"></i>
+                    </Link>
                 </li>
-                <span className="nav-bar__nav-item--account--divider">|</span>
+                <li className="nav-bar__nav-item--account"> 
+                    <Link to="/" className="nav-bar__nav-link">
+                        <i className="fa-brands fa-instagram nav-bar__icons"></i>
+                    </Link>
+                </li>
+                <li className="nav-bar__nav-item--account">    
+                    <Link to="/" className="nav-bar__nav-link">
+                        <i className="fa-brands fa-facebook nav-bar__icons"></i>
+                    </Link>
+                </li>
                 <li className="nav-bar__nav-item--account">
-                    <Link to="/" className="nav-bar__nav-link">Iniciar Sesión</Link>
+                    <Link to="/" className="nav-bar__nav-link">
+                        <i className="fa-solid fa-circle-user nav-bar__icons"></i>
+                    </Link>
+                </li>
+                <li className="nav-bar__nav-item--account">
+                    <Link to="/" className="nav-bar__nav-link nav-link__sign-in">
+                        Registrarse
+                    </Link>
                 </li>
             </ul>
         </nav>
     );
 };
-
 export default NavBar;

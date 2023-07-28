@@ -1,0 +1,41 @@
+@import "../../assets/scss/main.scss";
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        font-size: 0.8rem;
+        width: 300px;
+        padding: 10px;
+        padding-right: 35px;
+        border-radius: 5px 10px 10px 5px;
+        border: 0;
+        outline: none;
+        &:focus {
+            border: 1px solid $color-primary;
+            width: 400px;
+            transition: all 0.2s;
+        }
+    }
+    .search-bar__button {
+        background-color: $color-primary;
+        font-size: $defaultFontSize;
+        padding: 10px;
+        position: absolute;
+        border: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0 5px 5px 0;
+        color: $color-secundary;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-secundary;
+            color: $color-primary;
+        }
+    }
+}

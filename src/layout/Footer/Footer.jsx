@@ -17,7 +17,7 @@ const Footer = () => {
                 <p>Secciones</p>
                 <Link to="/" className="footer--links">Home</Link>
                 <Link to="/Alta" className="footer--links">Alta de producto</Link>
-                <Link to="/Contacto" className="footer--links">¡Envianos un mensaje!</Link>
+                <Link to="/Contacto" className="footer--links">¡Envíanos un mensaje!</Link>
                 <Link to="/Nosotros" className="footer--links">Acerca de nosotros</Link>
             </div>            
             <div className="footer__section">
@@ -33,4 +33,3 @@ const Footer = () => {
     );
 }
 export default Footer;
-

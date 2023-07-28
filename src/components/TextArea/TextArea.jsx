@@ -4,7 +4,6 @@ import './TextArea.scss';
 const TextArea = ({ label, name, rows, required, value, onChange }) => {
     const id = name.replace(' ','_').toLowerCase();
     
-
     return (
         <>
             <label className="labelForm" htmlFor={id}>
