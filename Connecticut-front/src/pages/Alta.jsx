@@ -30,10 +30,19 @@ const AltaContent = () => {
         );
     };
 
+    /*
+        try {
+            const response = await fetch('http://localhost:5000/ ', {
+                method: 'POST',
+                body: new data-o FormData-(e.target),
+            });
+            .then(x => x.json())
+            .then(x => console.log(x))
+    */
     return (
         <div className="product-form">
             <h1 className="form__logo">Connecticut</h1>
-            <form className="productForm" id="productForm" encType="multipart/form-data" onSubmit={handleSubmit}>
+            <form className="productForm" id="productForm" /*encType="multipart/form-data"*/ onSubmit={handleSubmit}>
                 <TextBox label='Email del empleado:' name='email' type='email' onChange={handleChange} required={true} value={data.email} />
                 <TextBox label='Título del producto:' type='text' onChange={handleChange} required={true} name="title" value={data.title}/>
                 <TextBox label='Precio:' type='text' onChange={handleChange} required={true} name="price" value={data.price}/>

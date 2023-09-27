@@ -15,8 +15,8 @@ const TextArea = ({ label, name, rows, required, value, onChange }) => {
             name={id}
             rows={rows} 
             required={required} 
-            onChange={onChange}>
-                {value}
+            onChange={onChange}
+            value={value}>
             </textarea>
         </>
     );

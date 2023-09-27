@@ -1,7 +1,7 @@
 import React from "react";
 import './TextBox.scss';
 
-const TextBox = ({label, name, type, required, accept, multiple, onChange}) => {
+const TextBox = ({label, name, type, required, accept, multiple, onChange, value}) => {
     const id = name.replace(' ','_').toLowerCase();
     
     return (
@@ -17,7 +17,8 @@ const TextBox = ({label, name, type, required, accept, multiple, onChange}) => {
             required={required} 
             {...(accept && { accept })}
             multiple={multiple} 
-            onChange={onChange} />
+            onChange={onChange}
+            value={value} />
         </>
     );
 };
