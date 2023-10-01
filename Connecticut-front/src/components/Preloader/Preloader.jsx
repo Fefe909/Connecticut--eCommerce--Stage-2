@@ -18,7 +18,6 @@ const Preloader = () => {
                 <circle class="back" cx="17" cy="17" r="14"></circle>
                 <circle class="front" cx="17" cy="17" r="14"></circle>
             </svg>
-            <div class="text" data-text="Buscando.."></div>
         </div>
     );
 }

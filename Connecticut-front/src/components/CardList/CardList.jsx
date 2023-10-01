@@ -6,8 +6,8 @@ import { SearchContext } from '../../layout/MainLayout';
 
 const CardList = () => {
     const { search, items } = useContext(SearchContext);
-    const filteredTitle = (item) => item.titulo.toLowerCase().includes(search.toLowerCase());
-    const filteredDescription = (item) => item.descripcion.toLowerCase().includes(search.toLowerCase());
+    const filteredTitle = (item) => item.title?.toLowerCase().includes(search.toLowerCase());
+    const filteredDescription = (item) => item.description?.toLowerCase().includes(search.toLowerCase());
     
     const filteredItems = items.filter((item) => {
         return filteredTitle(item) || filteredDescription(item);
@@ -20,9 +20,9 @@ const CardList = () => {
                     <Card
                         key={product.id}
                         image={product.imagen}
-                        title={product.titulo}
-                        description={product.descripcion}
-                        price={product.precio}
+                        title={product.title}
+                        description={product.description}
+                        price={product.price}
                     />
                 )))
             }

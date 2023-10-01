@@ -26,5 +26,4 @@ const getAllMessages = async () => {
     }
 };
 
-
 module.exports = { createMessage, getAllMessages };
